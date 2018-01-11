@@ -13,6 +13,7 @@ cache:
     - $GOPATH/pkg/dep/sources
 
 before_script:
+  - git version
   - go get -u github.com/golang/dep/cmd/dep
   - dep ensure -v
 
